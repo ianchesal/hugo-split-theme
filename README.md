@@ -82,9 +82,34 @@ You can control displaying of the image on a per-page basis by configuring `visu
 +++
 visual.image.enable = false
 +++
+```
+
+### Changing the image per-page
+
+You can override the image on any page using frontmatter. This is useful if you want to have a different image on a particular page.
+
+```markdown
+---
+title: "Your Page Title"
+visual:
+  image:
+    enable: true
+    file: "/images/your-specific-image.jpg"
+---
+```
+
 
 # Privacy statement
 ```
+
+```toml
+[[params.visual.image]]
+  enable = true
+  file = "images/background.jpg"
+  position = "center center"
+```
+
+```markdown
 
 ### Use a video
 
